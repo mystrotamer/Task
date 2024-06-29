@@ -7516,7 +7516,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h5 id="Class:">Class:<a class="anchor-link" href="#Class:">¶</a></h5>
+<h2 id="Py-4">Py-4<a class="anchor-link" href="#Py-4">¶</a></h2>
 </div>
 </div>
 </div>
@@ -7527,7 +7527,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h6 id="1.1-Define-the-class-and-constructor-method:">1.1 Define the class and constructor method:<a class="anchor-link" href="#1.1-Define-the-class-and-constructor-method:">¶</a></h6>
+<h1 id="Task1-:-Create-a-Car-Class">Task1 : Create a Car Class<a class="anchor-link" href="#Task1-:-Create-a-Car-Class">¶</a></h1>
 </div>
 </div>
 </div>
@@ -7538,7 +7538,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h6 id="1.2-Define-get_description-method:">1.2 Define <code>get_description</code> method:<a class="anchor-link" href="#1.2-Define-get_description-method:">¶</a></h6>
+<h4 id="%E2%97%8B-Create-a-class-named-Car.">○ Create a class named Car.<a class="anchor-link" href="#%E2%97%8B-Create-a-class-named-Car.">¶</a></h4><h4 id="%E2%97%8B-The-class-should-have-the-following-attributes">○ The class should have the following attributes<a class="anchor-link" href="#%E2%97%8B-The-class-should-have-the-following-attributes">¶</a></h4>
 </div>
 </div>
 </div>
@@ -7549,51 +7549,66 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h6 id="1.3-Define-read_odometer-method:">1.3 Define <code>read_odometer</code> method:<a class="anchor-link" href="#1.3-Define-read_odometer-method:">¶</a></h6>
+<h6 id="make,-model,-year,-and-odometer_reading">make, model, year, and odometer_reading<a class="anchor-link" href="#make,-model,-year,-and-odometer_reading">¶</a></h6>
 </div>
 </div>
 </div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h6 id="1.4-Define-update_odometer-method:">1.4 Define <code>update_odometer</code> method:<a class="anchor-link" href="#1.4-Define-update_odometer-method:">¶</a></h6>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 1. Define the Class:</span>
+
+<span class="k">class</span> <span class="nc">Car</span><span class="p">:</span>
+
+<span class="c1"># 2. Constructor Method:</span>
+<span class="w">    </span><span class="sd">"""Define an __init__ method to initialize these attributes.</span>
+<span class="sd">    The 'odometer_reading' should be initialized to 0."""</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">make</span><span class="p">,</span> <span class="n">model</span><span class="p">,</span> <span class="n">year</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">make</span> <span class="o">=</span> <span class="n">make</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">model</span> <span class="o">=</span> <span class="n">model</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">year</span> <span class="o">=</span> <span class="n">year</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">odometer_reading</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="c1"># 3. Methods:</span>
+
+<span class="w">    </span><span class="sd">""" Define a method named 'get_description' </span>
+<span class="sd">    that returns a neatly formatted</span>
+<span class="sd">    descriptive name for the car.</span>
+<span class="sd">    """</span>
+    
+    <span class="k">def</span> <span class="nf">get_description</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">year</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">make</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="si">}</span><span class="s2">"</span>
+
+<span class="w">    </span><span class="sd">"""Define a method named 'read_odometer' </span>
+<span class="sd">    that prints a statement showing </span>
+<span class="sd">    the car's mileage.</span>
+<span class="sd">    """</span>
+    <span class="k">def</span> <span class="nf">read_odometer</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"This car has </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">odometer_reading</span><span class="si">}</span><span class="s2"> miles on it."</span><span class="p">)</span>
+
+<span class="w">    </span><span class="sd">"""Define a method named 'update_odometer' </span>
+<span class="sd">    that sets the odometer reading to a given value.</span>
+<span class="sd">    This method should reject any attempt to roll back the odometer</span>
+<span class="sd">    """</span>
+    <span class="k">def</span> <span class="nf">update_odometer</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mileage</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">mileage</span> <span class="o">&gt;=</span> <span class="bp">self</span><span class="o">.</span><span class="n">odometer_reading</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">odometer_reading</span> <span class="o">=</span> <span class="n">mileage</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"You can't roll back an odometer!"</span><span class="p">)</span>
+
+<span class="w">    </span><span class="sd">"""Define a method named 'increment_odometer'</span>
+<span class="sd">    that increments the odometer</span>
+<span class="sd">    reading by a given amount</span>
+<span class="sd">    """</span>
+    <span class="k">def</span> <span class="nf">increment_odometer</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">miles</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">odometer_reading</span> <span class="o">+=</span> <span class="n">miles</span>
+</pre></div>
 </div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h6 id="1.5-Define-increment_odometer-method:">1.5 Define <code>increment_odometer</code> method:<a class="anchor-link" href="#1.5-Define-increment_odometer-method:">¶</a></h6>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h6 id="2.1-Input-car-details-and-create-Car-object:">2.1 Input car details and create Car object:<a class="anchor-link" href="#2.1-Input-car-details-and-create-Car-object:">¶</a></h6>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h6 id="2.2-Test-the-methods:">2.2 Test the methods:<a class="anchor-link" href="#2.2-Test-the-methods:">¶</a></h6>
 </div>
 </div>
 </div>
@@ -7602,34 +7617,23 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Car</span><span class="p">:</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">make</span><span class="p">,</span> <span class="n">model</span><span class="p">,</span> <span class="n">year</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">make</span> <span class="o">=</span> <span class="n">make</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">model</span> <span class="o">=</span> <span class="n">model</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">year</span> <span class="o">=</span> <span class="n">year</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">odometer_reading</span> <span class="o">=</span> <span class="mi">0</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 1</span>
+<span class="n">Emake</span> <span class="o">=</span><span class="s1">'BWS'</span> <span class="c1"># input(' Enter make Car ')</span>
+<span class="n">Emodel</span> <span class="o">=</span> <span class="s1">'TerBo'</span><span class="c1"># input(' Enter model Car ')</span>
+<span class="n">Eyear</span> <span class="o">=</span> <span class="mi">2025</span> <span class="c1"># int(input(' Enter Year Car '))</span>
+<span class="n">Ex</span> <span class="o">=</span> <span class="n">Car</span><span class="p">(</span><span class="n">Emake</span><span class="p">,</span> <span class="n">Emodel</span><span class="p">,</span> <span class="n">Eyear</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Ex</span><span class="o">.</span><span class="n">get_description</span><span class="p">())</span>
 
-    <span class="k">def</span> <span class="nf">get_description</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="p">(</span><span class="sa">f</span><span class="s2">" Make </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">make</span><span class="si">}</span><span class="s2">, Model </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="si">}</span><span class="s2">, Year </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">year</span><span class="si">}</span><span class="s2"> "</span><span class="p">)</span>
-        
-    <span class="k">def</span> <span class="nf">read_odometer</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="p">(</span><span class="sa">f</span><span class="s2">"odometer_reading </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">odometer_reading</span><span class="si">}</span><span class="s2"> "</span><span class="p">)</span>
+<span class="c1"># 2</span>
 
-    <span class="k">def</span> <span class="nf">update_odometer</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">new_odometer</span><span class="p">):</span>
-        <span class="k">if</span> <span class="n">new_odometer</span> <span class="o">&gt;=</span> <span class="bp">self</span><span class="o">.</span><span class="n">odometer_reading</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">odometer_reading</span> <span class="o">=</span> <span class="n">new_odometer</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Enter the correct counter. The current is </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">odometer_reading</span><span class="si">}</span><span class="s2"> "</span><span class="p">)</span>
-
-    <span class="k">def</span> <span class="nf">increment_odometer</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">miles</span><span class="p">):</span>
-        <span class="k">pass</span>
-
-<span class="c1"># Example        </span>
-<span class="n">my_Car</span> <span class="o">=</span> <span class="n">Car</span><span class="p">(</span><span class="s1">'Tu'</span><span class="p">,</span> <span class="s1">'C'</span><span class="p">,</span> <span class="s1">'2000'</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">my_Car</span><span class="o">.</span><span class="n">get_description</span><span class="p">())</span>
+<span class="n">Ex</span><span class="o">.</span><span class="n">read_odometer</span><span class="p">()</span>
+<span class="n">Ex</span><span class="o">.</span><span class="n">update_odometer</span><span class="p">(</span><span class="mi">7000</span><span class="p">)</span>
+<span class="n">Ex</span><span class="o">.</span><span class="n">read_odometer</span><span class="p">()</span>
+<span class="n">Ex</span><span class="o">.</span><span class="n">increment_odometer</span><span class="p">(</span><span class="mi">1500</span><span class="p">)</span>
+<span class="n">Ex</span><span class="o">.</span><span class="n">read_odometer</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -7642,19 +7646,12 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre> Make Tu, Model C, Year 2000 
+<pre>2025 BWS TerBo
+This car has 0 miles on it.
+This car has 7000 miles on it.
+This car has 8500 miles on it.
 </pre>
 </div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 </div>
 </div>
 </div>

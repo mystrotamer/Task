@@ -7509,37 +7509,123 @@ a.anchor-link {
 </style>
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
-<main><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<main>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Py-4">Py-4<a class="anchor-link" href="#Py-4">¶</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="Task3:-Create-a-Student-Class">Task3: Create a Student Class<a class="anchor-link" href="#Task3:-Create-a-Student-Class">¶</a></h1>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h4 id="%E2%97%8B-Create-a-class-named-Student.">○ Create a class named Student.<a class="anchor-link" href="#%E2%97%8B-Create-a-class-named-Student.">¶</a></h4><h4 id="%E2%97%8B-The-class-should-have-the-following-attributes">○ The class should have the following attributes<a class="anchor-link" href="#%E2%97%8B-The-class-should-have-the-following-attributes">¶</a></h4>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h6 id="name-and-courses">name and courses<a class="anchor-link" href="#name-and-courses">¶</a></h6>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Student</span><span class="p">():</span>
-    <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">' Enter You Name :'</span><span class="p">)</span>
-    <span class="n">courses</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">' Enter a courses'</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 1. Define the Class:</span>
 
-<span class="c1"># Constructor Method    </span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>
-                 <span class="n">name</span><span class="p">,</span>
-                 <span class="n">courses</span>
-                 <span class="p">):</span>
+<span class="k">class</span> <span class="nc">Student</span><span class="p">:</span>
+    
+    <span class="c1"># 2. Constructor Method:</span>
+
+<span class="w">    </span><span class="sd">"""Define an __init__ method to initialize </span>
+<span class="sd">    - the 'name' attribute </span>
+<span class="sd">    - and initialize 'courses' as an empty list</span>
+<span class="sd">    """</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">couesres</span> <span class="o">=</span> <span class="n">courses</span>
-
-<span class="c1"># Methods..</span>
-<span class="c1"># M1        </span>
-    <span class="k">def</span> <span class="nf">enroll</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">pass</span>
-<span class="c1"># M2    </span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">courses</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">" Name </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    
+    <span class="c1"># 3. Methods:</span>
+<span class="w">    </span>
+<span class="w">    </span><span class="sd">"""Define a method named 'enroll' </span>
+<span class="sd">    that takes a course name as a parameter </span>
+<span class="sd">    and appends it to the courses list.</span>
+<span class="sd">    """</span>
+    <span class="k">def</span> <span class="nf">enroll</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">course_name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">courses</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">course_name</span><span class="p">)</span>
+<span class="w">    </span>
+<span class="w">    </span><span class="sd">"""Define a method named 'get_courses' </span>
+<span class="sd">    that prints the list of courses </span>
+<span class="sd">    the student is enrolled in</span>
+<span class="sd">    """</span>
     <span class="k">def</span> <span class="nf">get_courses</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">pass</span>
-
-
-<span class="c1"># call</span>
+        <span class="nb">print</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">courses</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 1</span>
+<span class="n">st</span> <span class="o">=</span> <span class="n">Student</span><span class="p">(</span><span class="s2">"Tamer"</span><span class="p">)</span>
+
+<span class="c1"># 2</span>
+<span class="n">st</span><span class="o">.</span><span class="n">enroll</span><span class="p">(</span><span class="s2">"Al"</span><span class="p">);</span><span class="n">st</span><span class="o">.</span><span class="n">enroll</span><span class="p">(</span><span class="s1">'IT'</span><span class="p">)</span>
+
+<span class="n">st</span><span class="o">.</span><span class="n">get_courses</span><span class="p">()</span>  
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre> Name Tamer
+['Al', 'IT']
+</pre>
 </div>
 </div>
 </div>
